@@ -7,7 +7,7 @@ import NavigationBar from './components/NavigationBar';
 
 export default function AppRouter() {
     return(
-        <Router>
+        <Router basename='/space-tourism-challenge'>
             <NavigationBar />
             <Routes>
                 <Route path='/' element={<Home />} />
