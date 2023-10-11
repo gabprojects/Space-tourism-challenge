@@ -1,0 +1,14 @@
+.NavTopLeft {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.Logo {
+    width: 40px;
+    height: 40px;
+}

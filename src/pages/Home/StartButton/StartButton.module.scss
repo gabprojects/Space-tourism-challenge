@@ -1,0 +1,67 @@
+@import '../../../styles/variables';
+@import '../../../styles/typhography';
+
+.StartButton {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: $white;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        width: 246px;
+        height: 246px;
+        border-radius: 50%;
+        background-color: $white-a10;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.Heading__4 {
+    font-size: 20px;
+    letter-spacing: 1.25px;
+}
+
+@media (min-width: $tablet) {
+    .StartButton {
+        width: 242px;
+        height: 242px;
+
+        &::before {
+            width: 397px;
+            height: 397px;
+        }
+    }
+
+    .Heading__4 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .StartButton {
+        width: 274px;
+        height: 274px;
+
+        &::before {
+            width: 450px;
+            height: 450px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+
+.Slider1 {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $white-a17;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $white-a50;
+    }
+
+    &:active {
+        background-color: $white;
+    }
+}
+
+.Slider1Active {
+    background-color: $white;
+}
+
+@media (min-width: $desktop) {
+    .Slider1 {
+        width: 15px;
+        height: 15px;
+    }
+}

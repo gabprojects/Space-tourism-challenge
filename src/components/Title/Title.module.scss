@@ -1,0 +1,33 @@
+@import '../../styles/typhography';
+@import '../../styles/variables';
+
+.TitleContainer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: $white;
+    letter-spacing: 2.7px;
+}
+
+.TitleNumber {
+    color: $white-a25;
+}
+
+@media (min-width: $tablet) {
+
+    .TitleContainer {
+        justify-content: start;
+        gap: 19px;
+        font-size: 20px;
+        letter-spacing: 3.375px;
+    }
+}
+
+@media (min-width: $desktop) {
+
+    .TitleContainer {
+        gap: 28px;
+        font-size: 28px;
+        letter-spacing: 4.725px;
+    }
+}

@@ -1,0 +1,54 @@
+@import '../../../styles/typhography';
+@import '../../../styles/variables';
+
+.Slider2Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $white-a25;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+        border: 1px solid $white;
+    }
+
+    &:active {
+        background-color: $white;
+        color: $dark;
+    }
+}
+
+.Slider2Active {
+    background-color: $white;
+    color: $dark;
+}
+
+.Heading__4 {
+    font-size: 16px;
+}
+
+@media (min-width: $tablet) {
+    .Slider2Container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .Heading__4 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .Slider2Container {
+        width: 80px;
+        height: 80px;
+    }
+
+    .Heading__4 {
+        font-size: 32px;
+    }
+}

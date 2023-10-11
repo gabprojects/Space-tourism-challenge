@@ -1,0 +1,50 @@
+@import '../../styles/typhography';
+@import '../../styles/variables';
+
+.NavContainer {
+    display: table;
+    padding-bottom: 2px;
+    margin-bottom: 32px;
+    color: $white;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+        border-bottom: 3px solid $white-a50;
+    }
+
+    &:active {
+        border-bottom: 3px solid $white;
+    }
+}
+
+.NavContainerActive {
+    border-bottom: 3px solid $white;
+}
+
+.NavNumber {
+    font-weight: bold;
+}
+
+.NavText {
+    display: inline;
+}
+
+@media (min-width: $tablet) {
+    .NavContainer {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .NavNumber {
+        display: none;
+    }
+}
+
+@media (min-width: $desktop) {
+    .NavNumber {
+        display: inline;
+    }
+}

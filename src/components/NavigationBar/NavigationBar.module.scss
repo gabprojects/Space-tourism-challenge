@@ -1,0 +1,61 @@
+@import '../../styles/typhography';
+@import '../../styles/variables';
+
+.NavigationBar {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    padding: 0 24px;
+}
+
+.NavLine {
+    display: none;
+    flex-shrink: 0;
+    width: 490px;
+    height: 1px;
+    background: $white-a25;
+}
+
+.NavButtons {
+    display: none;
+}
+
+@media (min-width: $tablet) {
+    .NavigationBar {
+        height: 106px;
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+
+    .NavButtons {
+        display: flex;
+        gap: 36px;
+        background-color: $white-a04;
+        backdrop-filter: blur(40.774227142333984px);
+        height: 100%;
+        padding: 0 48px;
+    }
+}
+
+@media (min-width: $desktop) {
+    .NavLine {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        margin-left: 110px;
+    }
+
+    .NavigationBar {
+        top: 40px;
+        padding-left: 56px;
+    }
+
+    .NavButtons {
+        gap: 50px;
+        padding-left: 123px;
+        padding-right: 167px;
+    }
+}

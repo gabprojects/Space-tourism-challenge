@@ -1,0 +1,41 @@
+@import '../../../styles/typhography';
+@import '../../../styles/variables';
+
+.menuIcon {
+    z-index: 4;
+    width: 24px;
+    height: 21px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.SideMenu {
+    position: fixed;
+    top: 0px;
+    right: -254px;
+    z-index: 3;
+    width: 254px;
+    height: 100vh;
+    padding-top: 118px;
+    padding-left: 32px;
+    background-color: $white-a04;
+    backdrop-filter: blur(40px);
+    /*transition: all 0.9 ease-out;*/
+}
+
+.SideMenuVisible {
+    right: 0px;
+}
+
+@media (min-width: $tablet) {
+
+    .menuIcon {
+        display: none;
+    }
+
+    .SideMenu {
+        display: none;
+    }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+$primaryFont: 'Bellefair', sans-serif;
+$secondaryFont: 'Barlow Condensed', sans-serif;
+$bodyTextFont: 'Barlow', sans-serif;
+
+@mixin font($font-family, $font-size, $letter-spacing: normal) {
+    font-family: $font-family;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+}
+
+.Heading {
+    &__1 {
+        @include font($primaryFont, 150px);
+    }
+
+    &__2 {
+        @include font($primaryFont, 100px);
+    }
+
+    &__3 {
+        @include font($primaryFont, 56px);
+    }
+
+    &__4 {
+        @include font($primaryFont, 32px);
+    }
+
+    &__5 {
+        @include font($secondaryFont, 28px, 4.75px);
+    }
+}
+
+.Subheading {
+    &__1 {
+        @include font($primaryFont, 28px);
+    }
+
+    &__2 {
+        @include font($secondaryFont, 14px, 2.35px);
+    }
+}
+
+.NavText {
+    @include font($secondaryFont, 16px, 2.7px);
+}
+
+.BodyText {
+    @include font($bodyTextFont, 18px);
+}

@@ -1,0 +1,239 @@
+@import '../../styles/typhography';
+@import '../../styles/variables';
+
+.main {
+    width: 100%;
+    height: 100vh;
+    min-height: 710px;
+    background-image: url('../../assets/crew/background-crew-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Spacing {
+    width: 100%;
+    height: 96px;
+}
+
+.ContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImageContainer {
+    display: flex;
+    justify-content: center;
+    width: 327px;
+    height: 223px;
+    margin-top: 32px;
+
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.Bar {
+    width: 327px;
+    height: 1px;
+    background-color: $light-dark;
+}
+
+.Slider {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.InfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 327px;
+}
+
+.Subheading__1 {
+    color: $white-a50;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.Heading__4 {
+    color: $white;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.BodyText {
+    color: $light-blue;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+
+@media (min-width: $tablet) {
+    .main {
+        min-height: 1024px;
+        background-image: url('../../assets/crew/background-crew-tablet.jpg');
+    }
+
+    .Spacing {
+        height: 136px;
+    }
+
+    .Title {
+        padding-left: 39px;
+    }
+
+    .OrganizationContainer {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    .InfoContainer {
+        width: 458px;
+        margin-top: 60px;
+        order: 1;
+    }
+
+    .Subheading__1 {
+        font-size: 24px;
+    }
+
+    .Heading__4 {
+        font-size: 40px;
+    }
+
+    .BodyText {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .Slider {
+        margin: 40px 0;
+        order: 2;
+    }
+
+    .Bar {
+        display: none;
+    }
+
+    .ImageContainer {
+        margin-top: 0px;
+        order: 2;
+    }
+
+    .Image {
+        &__crew {
+            &__0 {
+                width: 456px;
+                height: 540px;
+            }
+
+            &__1 {
+                width: 368px;
+                height: 520px;
+            }
+
+            &__2 {
+                width: 433px;
+                height: 520px;
+            }
+
+            &__3 {
+                width: 539px;
+                height: 520px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .main {
+        min-height: 900px;
+        background-image: url('../../assets/crew/background-crew-desktop.jpg');
+    }
+
+    .Spacing {
+        height: 212px;
+    }
+
+    .Title {
+        padding-left: 166px;
+    }
+
+    .ContentContainer {
+        flex-direction: row;
+        align-items: start;
+        gap: 50px;
+    }
+
+    .ImageContainer {
+        order: 2;
+    }
+
+    .Image {
+        &__crew {
+            &__0 {
+                width: 568px;
+                height: 660px;
+            }
+
+            &__1 {
+                width: 453px;
+                height: 654px;
+            }
+
+            &__2 {
+                width: 554px;
+                height: 660px;
+            }
+
+            &__3 {
+                width: 615px;
+                height: 660px;
+            }
+        }
+    }
+
+    .OrganizationContainer {
+        gap: 120px;
+        padding-top: 155px;
+        margin-left: 165px;
+        order: 1;
+    }
+
+    .InfoContainer {
+        align-items: start;
+        width: 615px;
+        margin-top: 0px;
+    }
+
+    .Subheading__1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .Heading__4 {
+        font-size: 56px;
+        margin-bottom: 30px;
+    }
+
+    .BodyText {
+        width: 444px;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: start;
+    }
+
+    .Slider {
+        justify-content: flex-start;
+        margin: 0px;
+    }
+}
