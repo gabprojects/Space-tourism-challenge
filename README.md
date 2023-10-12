@@ -25,7 +25,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 ### Links
 
 - Solution URL: [https://github.com/gabprojects/space-tourism-challenge](https://github.com/gabprojects/space-tourism-challenge)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://gabprojects.github.io/space-tourism-challenge](https://gabprojects.github.io/space-tourism-challenge)
 
 ### The challenge
 

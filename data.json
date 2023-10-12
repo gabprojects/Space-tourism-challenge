@@ -3,7 +3,7 @@
     {
       "name": "Moon",
       "images": {
-        "png": "./src/assets/destination/image-moon.png",
+        "png": "./space-tourism-challenge/src/assets/destination/image-moon.png",
         "webp": "./src/assets/destination/image-moon.webp",
         "alt": "Image of the Moon"
       },
