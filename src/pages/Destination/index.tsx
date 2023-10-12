@@ -3,10 +3,14 @@ import styles from './Destination.module.scss'
 import Tabs from './Tabs'
 import data from '../../../data.json'
 import { useState } from 'react'
+import Moon from '../../assets/destination/image-moon.png'
+import Moon2 from '../../assets/destination/image-moon.webp'
 
 export default function Destination() {
     const [position, setPosition] = useState(0);
     const destination = data.destinations[position];
+
+    /*<img className={styles.ImageContainer__img} src={destination.images.png} alt={destination.images.alt} />*/
 
     const handleClick1 = () => {
         setPosition(0);
@@ -29,8 +33,10 @@ export default function Destination() {
             </div>
             <div className={styles.ContentContainer}>
                 <div className={styles.ImageContainer}>
-                    <img className={styles.ImageContainer__img} src={destination.images.png} alt={destination.images.alt} />
+                    
+                    <img className={styles.ImageContainer__img} src={Moon} />
                 </div>
+                <img src={Moon2} />
                 <div className={styles.InfoContainer}>
                     <div className={styles.tabs}>
                         <Tabs
